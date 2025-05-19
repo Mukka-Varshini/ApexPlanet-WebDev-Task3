@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-laptop-code"></i> Interactive Web Page</h1>
+      <p>Responsive | Carousel | API Integration</p>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="card">
+      <h2><i class="fas fa-images"></i> Image Carousel</h2>
+      <div class="carousel" id="carousel">
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <img id="carousel-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Carousel Image" />
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Joke Section -->
+    <section class="card">
+      <h2><i class="fas fa-laugh"></i> Random Joke Generator</h2>
+      <button id="jokeBtn"><i class="fas fa-smile"></i> Get a Joke</button>
+      <div id="loader" class="loader hidden"></div>
+      <p id="jokeDisplay"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
